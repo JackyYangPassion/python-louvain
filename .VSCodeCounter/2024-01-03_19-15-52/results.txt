@@ -1,0 +1,55 @@
+Date : 2024-01-03 19:15:52
+Directory : /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain
+Total : 16 files,  1645 codes, 195 comments, 435 blanks, all 2275 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| Python             |          6 |        917 |        152 |        217 |      1,286 |
+| CSS                |          1 |        405 |         11 |         92 |        508 |
+| reStructuredText   |          3 |        155 |         14 |         91 |        260 |
+| Makefile           |          1 |         72 |          7 |         22 |        101 |
+| HTML               |          1 |         44 |          0 |          7 |         51 |
+| JSON with Comments |          1 |         30 |          8 |          1 |         39 |
+| YAML               |          1 |         14 |          2 |          1 |         17 |
+| Docker             |          1 |          5 |          1 |          3 |          9 |
+| pip requirements   |          1 |          3 |          0 |          1 |          4 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         16 |      1,645 |        195 |        435 |      2,275 |
+| . (Files)                                                                                       |          5 |        424 |         16 |         95 |        535 |
+| .devcontainer                                                                                   |          2 |         35 |          9 |          4 |         48 |
+| community                                                                                       |          3 |        539 |         21 |        104 |        664 |
+| docs                                                                                            |          6 |        647 |        149 |        232 |      1,028 |
+| docs (Files)                                                                                    |          4 |        198 |        138 |        133 |        469 |
+| docs/_static                                                                                    |          1 |        405 |         11 |         92 |        508 |
+| docs/_templates                                                                                 |          1 |         44 |          0 |          7 |         51 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                        | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/.devcontainer/Dockerfile        | Docker             |          5 |          1 |          3 |          9 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/.devcontainer/devcontainer.json | JSON with Comments |         30 |          8 |          1 |         39 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/.travis.yml                     | YAML               |         14 |          2 |          1 |         17 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/README.rst                      | reStructuredText   |         53 |          8 |         36 |         97 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/community/__init__.py           | Python             |         14 |          6 |          4 |         24 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/community/community_louvain.py  | Python             |        455 |         14 |         92 |        561 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/community/community_status.py   | Python             |         70 |          1 |          8 |         79 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/docs/Makefile                   | Makefile           |         72 |          7 |         22 |        101 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/docs/_static/default.css        | CSS                |        405 |         11 |         92 |        508 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/docs/_templates/layout.html     | HTML               |         44 |          0 |          7 |         51 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/docs/api.rst                    | reStructuredText   |         10 |          2 |          6 |         18 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/docs/conf.py                    | Python             |         24 |        125 |         56 |        205 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/docs/index.rst                  | reStructuredText   |         92 |          4 |         49 |        145 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/requirements.txt                | pip requirements   |          3 |          0 |          1 |          4 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/setup.py                        | Python             |         23 |          0 |          4 |         27 |
+| /Users/yangjiaqi/Documents/hugegraph_concurrency/python-louvain/test_community.py               | Python             |        331 |          6 |         53 |        390 |
+| Total                                                                                           |                    |      1,645 |        195 |        435 |      2,275 |
++-------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

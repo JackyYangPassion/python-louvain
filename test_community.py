@@ -4,12 +4,14 @@ Test for community package
 """
 import unittest
 import random
+import os
 
 import networkx as nx
 import numpy
 
 import community as co
 from community.community_louvain import __randomize as randomize, __renumber as renumber
+import pandas as pd
 
 
 def girvan_graphs(zout):
@@ -37,6 +39,27 @@ def girvan_graphs(zout):
                 else:
                     if val < pout:
                         graph.add_edge(node_1, node_2)
+    return graph
+
+
+def louvain_graphs(zout):
+    """
+    Create a graph of 18 vertices, 4 communities.
+
+    community is node_1 modulo 4
+    """
+
+    os.chdir("/Users/yangjiaqi/Documents/hugegraph_concurrency/GraphDataMining/DataSet")
+    
+    vertiecs_data = pd.read_csv("vertex_address.csv")
+    edges_data = pd.read_csv("edge_transaction.csv")
+    
+    data  = edges_data[['from','to']].values
+    graph = nx.Graph()
+    for num in range(len(data)):
+        graph.add_edge(str(data[num,0]),str(data[num,1]))
+        
+    
     return graph
 
 
@@ -156,8 +179,36 @@ class BestPartitionTest(unittest.TestCase):
         """
         graph = girvan_graphs(3)  # use small zout otherwise results may change
         part = co.best_partition(graph)
+        df_com_louvain = pd.DataFrame({'group_id':part.values(),
+                               'user_id':part.keys()}
+                             )
+        print(df_com_louvain.head(10))
+        
+        # 输出分群结果
+        print("communities detail: %s",df_com_louvain.groupby('group_id').count())
+        
         for node, com in part.items():
             self.assertEqual(com, part[node % 4])
+            
+    
+    
+    
+    def test_louvain_data(self):
+        """
+        Test that community found are good using Girvan & Newman benchmark
+        """
+        graph = louvain_graphs(3)  # use small zout otherwise results may change
+        part = co.best_partition(graph)
+        df_com_louvain = pd.DataFrame({'group_id':part.values(),
+                               'user_id':part.keys()}
+                             )
+        print(df_com_louvain.head(18))
+        
+        # 输出分群结果
+        print("communities detail: %s",df_com_louvain.groupby('group_id').count())
+        
+    
+    
 
     def test_ring(self):
         """

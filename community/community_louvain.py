@@ -350,7 +350,7 @@ def generate_dendrogram(graph,
     status.init(current_graph, weight, part_init)
     status_list = list()
     __one_level(current_graph, status, weight, resolution, random_state)
-    new_mod = __modularity(status, resolution)
+    new_mod = __modularity(status, resolution) # 计算模块度
     partition = __renumber(status.node2com)
     status_list.append(partition)
     mod = new_mod
